@@ -1,0 +1,131 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*damos un reseteo*/
+html{
+    scroll-behavior: smooth;
+}
+/*Recargado de página con efecto deslizante*/
+header{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    width: 100%;
+    height: 90px;
+    background-color:rgb(1, 153, 255);
+    position: fixed;
+}
+/*creamos un header con position fixed, para que permanezca en su lugar y se muestre por encima de los demas elementos al desplazar*/
+.logo{
+    float: left;
+    display: flex;
+    line-height: 90px;
+    font-size: 25px;
+    font-weight: bold;
+    color: white;
+    text-transform: uppercase;
+}
+/*creamos una caja donde colocamos la imagen del logo y nombre del sitio web*/
+.barra{
+    float: right;
+    text-transform: capitalize;
+    margin-right: 10px;
+}
+/*creamos una caja con secciones para redireccionar a otras páginas, de momento solo recargan la página*/
+.barra ul li{
+    display: inline;
+    line-height: 90px;
+    font-size: 20px;
+}
+.barra ul li a{
+    text-decoration: none;
+    color: white;
+}
+.barra ul li a:hover{
+    color: black;
+}
+main{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    width: 100%;
+    height: 100vh;
+    background-image: url(./multimedia/fondo3.jpg);
+    background-size: cover;
+    background-position: center;
+}
+/*aquí creamos una caja para albergar una imagen de fondo principal, tenía ideas de agregarle algo de contenido, por eso use el main y le deje una fuente. Imagen provisoria, cambiar por una sin marca de agua*/
+h2{
+    text-align: center;
+    text-transform: capitalize;
+    color: white;
+    font-weight: bold;
+    font-size: 30px;
+    padding: 20px;
+    text-decoration: underline;
+    background-color: rgba(4, 10, 100, 0.8);
+}
+/*un h2 como separador entre el main y la galería de tarjetas*/
+.tarjetas{
+    width: 100%;
+    height: 600px;
+    background-color: rgba(11, 163, 163, 0.8);
+    display: flex;
+    flex-flow: wrap row;
+    justify-content:space-evenly;
+    align-content: space-evenly;
+}
+/*caja contenedora de las tarjetas*/
+.tarjeta{
+    height: 250px;
+    width: 220px;
+    border: 2px solid black;
+    border-radius: 5px;
+    box-shadow: -10px 20px 10px black;
+}
+.tarjeta-imagen{
+    background-color: rgb(1, 153, 255);
+    height: 200px;
+    text-align: center;
+}
+.tarjeta-imagen img{
+    height: 200px;
+}
+.tarjeta-descripción{
+    background-color: white;
+    height: 50px;
+    text-align: center;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+label{
+    color:deepskyblue;
+}
+footer{
+    width: 100%;
+    height: 180px;
+    background-color: rgba(0, 0, 0, 0.9);
+    color: white;
+    font-size: 35px;
+    text-align: center;
+    padding: 30px;
+}
+/*pie de página para colocar redes sociales e información adicional necesaria*/
+.redes i{
+    color: rgb(1, 153, 255);
+    font-size: 60px;
+    letter-spacing: 30px;
+    padding-top: 20px;
+}
+.redes i:hover{
+    color: white;
+}
+.subir{
+    position: fixed;
+    bottom: 50px;
+    right: 60px;
+    font-size: 55px;
+    line-height: 40px;
+    color: rgb(1, 153, 255);
+    background-color: white;
+    border-radius: 50%;
+}
+/*icono con position fixed para recargar la página*/
